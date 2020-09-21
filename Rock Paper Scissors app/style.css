@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: #1f2833;
+	font-family: sans-serifS;
+}
+
+.score-bar {
+	color: #66fcf1;
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.home-screen {
+	color: white;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.home-screen h1 {
+	font-size: 50px;
+}
+
+.logo {
+	height: 15vh;
+}
+
+.play,
+.rock,
+.paper,
+.scissors {
+	width: 150px;
+	height: 50px;
+	background: none;
+	background-color: #45a29e;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	color: white;
+	font-size: 20px;
+	align-content: center;
+	text-align: center;
+}
+
+.game-screen {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner,
+.banner-winner {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.images,
+.buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.images img,
+.results img {
+	height: 10vh;
+	margin: 50px;
+}
+
+.rock-img {
+	transform: rotateY(180deg);
+}
+
+img.rotate {
+	transform: rotateY(180deg);
+}
+
+.results-screen {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.results {
+	display: flex;
+	justify-content: space-around;
+}
+
+div.fadeOut {
+	opacity: 0;
+	pointer-events: none;
+}
+
+div.fadeIn {
+	opacity: 1;
+	pointer-events: all;
+}
+
+@keyframes shake-rock {
+	10%,
+	90% {
+		transform: rotateY(180deg) translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: rotateY(180deg) translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotateY(180deg) translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: rotateY(180deg) translate3d(4px, 0, 0);
+	}
+}
+
+@keyframes shake-rest {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+.audio-icon {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}

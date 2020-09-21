@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Rock Paper Scissors!</title>
+	</head>
+	<body>
+		<div class="score-bar fadeOut">
+			<div class="player-score">
+				<h1>Player</h1>
+				<h2>0</h2>
+			</div>
+			<div class="computer-score">
+				<h1>Computer</h1>
+				<h2>0</h2>
+			</div>
+		</div>
+		<div class="home-screen">
+			<h1>Rock Paper Scissors</h1>
+			<img class="logo" src="./photos/logo.png" />
+			<button class="play">Play!</button>
+		</div>
+		<div class="game-screen fadeOut">
+			<div class="options-screen fadeOut">
+				<h2 class="banner">Choose an option</h2>
+				<div class="images">
+					<img class="rock-img" src="./photos/rock.png" />
+					<img class="paper-img" src="./photos/paper.png" />
+					<img class="scissors-img" src="./photos/scissors.png" />
+				</div>
+				<div class="buttons">
+					<button class="rock">rock</button>
+					<button class="paper">paper</button>
+					<button class="scissors">scissors</button>
+				</div>
+			</div>
+			<div class="results-screen fadeOut">
+				<h2 class="banner-winner">Choose an option</h2>
+				<div class="results">
+					<img class="player-hand" src="./photos/rock.png" alt="" />
+					<img class="computer-hand" src="./photos/rock.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<img class="audio-icon" src="./photos/sound-on.png" />
+	</body>
+	<script src="app.js"></script>
+</html>
